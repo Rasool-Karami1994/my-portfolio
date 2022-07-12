@@ -3,6 +3,7 @@ import selfGrowth from "../assets/img/self-growth.jpg";
 import code from "../assets/img/code.jpg";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+
 const About = () => {
   const navigate = useNavigate();
   const redirector = () => {
@@ -10,7 +11,7 @@ const About = () => {
   };
   return (
     <>
-      <button onClick={redirector} className="about-button">
+      <button onClick={redirector} className="back-button">
         <IoIosArrowBack />
       </button>
       <div className="about-container">
@@ -94,7 +95,7 @@ const About = () => {
           </span>
         </p>
 
-        <img 
+        <img
           loading="lazy"
           className="about-img"
           src={code}

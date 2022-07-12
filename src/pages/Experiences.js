@@ -1,7 +1,11 @@
 import React from "react";
-
+import ExperiencesComponent from "../components/ExperiencesComponent";
 const Experiences = () => {
-  return <>this is experiences</>;
+  return (
+    <>
+      <ExperiencesComponent />
+    </>
+  );
 };
 
 export default Experiences;

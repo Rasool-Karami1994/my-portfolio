@@ -4,7 +4,7 @@ import man from "../assets/img/man .png";
 const HomePage = () => {
   return (
     <div className="home-page-container">
-      <div class="home-page-content">
+      <div className="home-page-content">
         <h1>
           I'm Rasool <span>KARAMI</span>
         </h1>
