@@ -42,36 +42,47 @@ const ExperiencesComponent = () => {
       <button onClick={redirector} className="back-button">
         <IoIosArrowBack />
       </button>
-
-      <div className="experinces-container">
-        {items.map((item) => {
-          return (
-            <div key={item.id} className="experiences-card">
-              <img
-                name={item.id}
-                onClick={showSelectedItem}
-                src={item.image}
-                alt="this is an img"
-                className="expeiences-card-img"
-              ></img>
-              <div className="experiences-card-content">
-                <p>{item.title}</p>
-                <a href={item.link} target="blank">
-                  <span>
-                    <FaLongArrowAltLeft />
-                  </span>
-                  visit the app demo on netlify
-                </a>
-                <button
+      <div className="page-container">
+        <div className="experinces-container">
+          {items.map((item) => {
+            return (
+              <div key={item.id} className="experiences-card">
+                <img
                   name={item.id}
-                  onClick={() => showSelectedItem(item.id)}
-                >
-                  Check
-                </button>
+                  onClick={showSelectedItem}
+                  src={item.image}
+                  alt="this is an img"
+                  className="expeiences-card-img"
+                ></img>
+                <div className="experiences-card-content">
+                  <p>{item.title}</p>
+                  <a href={item.link} target="blank">
+                    <span>
+                      <FaLongArrowAltLeft />
+                    </span>
+                    visit the app demo on netlify
+                  </a>
+                  <button
+                    name={item.id}
+                    onClick={() => showSelectedItem(item.id)}
+                  >
+                    Check
+                  </button>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <div className="second-section">
+          <h4 className="second-section-content">
+            !Use the button below to see my other experiences and projects!{" "}
+          </h4>
+          <button className="second-section-btn">
+            <a href="https://github.com/Rasool-Karami1994" target="blank">
+              GitHub
+            </a>
+          </button>
+        </div>
       </div>
     </>
   );
