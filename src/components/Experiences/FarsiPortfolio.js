@@ -1,16 +1,16 @@
 import React from "react";
-import image2 from "../../assets/img/todolist2.png";
+import FarsiPort from "../../assets/img/farsi-portfolio.PNG";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 
-const TodoListExperience = () => {
+const FarsiPortfolio = () => {
   const item = [
     {
-      image1: "/images/todo-list.png",
-      Title: "Todo List App",
-      subTitle: "Built with React & Css",
-      live: "https://rasool-todolist-app.netlify.app/",
-      gitHub: "https://github.com/Rasool-Karami1994/todolist-app",
+      image1: "/images/mobile-farsi-port.PNG",
+      Title: "Persian portfolio",
+      subTitle: "A portfolio with classic UI design",
+      live: "https://rasool-farsi-portfolio.netlify.app/",
+      gitHub: "https://github.com/Rasool-Karami1994/Portfolio-Farsi-version",
     },
   ];
 
@@ -50,27 +50,27 @@ const TodoListExperience = () => {
           </div>
         ))}
 
-        <div className="second-section-container">
-          <img src={image2} className="first-img" alt="this is an img"></img>
-          <div className="right-side-container">
-            <h3>DESCRIPTION</h3>
-            <p>
-              This program is a todolist with the feature of adding new todos,
-              deleting and editing them.
-            </p>
-            <p>
-              After doing each todo, you can add it to the done list and easily
-              find the desired item with the available filters.
-            </p>
-            <p>
-              In this mini project, I used React and CSS, and it was an exercise
-              to learn more about React hooks and how to filter items.
-            </p>
-          </div>
+        <div className="description-container">
+          <h3>DESCRIPTION</h3>
+          <p>
+            This is my personal portfolio in Farsi, where some of the projects
+            done by me are included, and I have written about myself on the
+            About page of a blog, and the ways to contact me are also included
+            in all pages.{" "}
+          </p>
+          <p>
+            This web application was made using React and CSS, in which I used
+            Raect Router Dom and React Swiper.{" "}
+          </p>
         </div>
+        <img
+          alt="desktop-size"
+          src={FarsiPort}
+          className="description-container-img"
+        ></img>
       </div>
     </>
   );
 };
 
-export default TodoListExperience;
+export default FarsiPortfolio;

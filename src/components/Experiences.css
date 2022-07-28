@@ -1,0 +1,72 @@
+.selected-projects-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 220px 0;
+}
+.selected-project {
+  width: 100%;
+  display: flex;
+  height: auto;
+  /* border: 2px solid #000; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 0;
+}
+.selected-project-content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 500px;
+}
+.selected-project-content-section h2 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  border-bottom: 1px solid #212121;
+  color: #212121;
+  padding-bottom: 20px;
+}
+.selected-project-content-section p {
+  font-family: "Poppins", sans-serif;
+
+  color: #212121;
+  font-size: 18px;
+  opacity: 0.6;
+  font-weight: 550;
+  margin-bottom: 30px;
+}
+.selected-project-content-section button {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+
+  color: #212121;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30;
+}
+
+.selected-project-image-section {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.experiences-img {
+  position: relative;
+  height: 500px;
+  width: 70%;
+  border-radius: 20px;
+  border: 2px solid #212121;
+}

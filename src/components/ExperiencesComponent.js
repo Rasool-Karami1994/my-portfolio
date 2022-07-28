@@ -1,9 +1,9 @@
 import React from "react";
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import SliderComponent from "./Slider";
-
+import "./Experiences.css";
 const ExperiencesComponent = () => {
   const navigate = useNavigate();
   const redirector = () => {
@@ -12,24 +12,23 @@ const ExperiencesComponent = () => {
 
   const items = [
     {
-      image: "/images/todolist.PNG",
-      title: "Todolist-App",
-      link: "https://rasool-todolist-app.netlify.app/",
+      image: "/images/shop.PNG",
+      title: "Online shoe store website",
+      subTitle: "An online shoe store with real back-end",
       id: 1,
     },
     {
-      image: "/images/comments-demo.PNG",
-      title: "Comments-demo",
-      link: "https://rasool-http-app-demo.netlify.app/",
-
+      image: "/images/real-estate.PNG",
+      title: "Real Estate Database",
+      subTitle:
+        "An application to store and easily access property informations",
       id: 2,
     },
 
     {
-      image: "/images/weather-app.PNG",
-      title: "Weather-App",
-      link: "https://rasool-weather-app.netlify.app/",
-
+      image: "/images/farsi-portfolio.PNG",
+      title: "Persian portfolio",
+      subTitle: "A portfolio with classic UI design",
       id: 3,
     },
   ];
@@ -46,39 +45,29 @@ const ExperiencesComponent = () => {
       <div className="page-container">
         <div className="experinces-section">
           <SliderComponent />
-          {/* <div className="experinces-container"> */}
-          {items.map((item) => {
-            return (
-              <div className="selected-projects-container" key={item.id}>
-                <div>
-              </div>
-              //   <div key={item.id} className="experiences-card">
-              //     <img
-              //       name={item.id}
-              //       onClick={() => showSelectedItem(item.id)}
-              //       src={item.image}
-              //       alt="this is an img"
-              //       className="expeiences-card-img"
-              //     ></img>
-              //     <div className="experiences-card-content">
-              //       <p>{item.title}</p>
-              //       <a href={item.link} target="blank">
-              //         <span>
-              //           <FaLongArrowAltLeft />
-              //         </span>
-              //         visit the app demo on netlify
-              //       </a>
-              //       <button
-              //         name={item.id}
-              //         onClick={() => showSelectedItem(item.id)}
-              //       >
-              //         Check
-              //       </button>
-              //     </div>
-              //   </div>
-            );
-          })}
-          {/* </div> */}
+          <div className="selected-projects-container">
+            {items.map((item) => {
+              return (
+                <div className="selected-project" key={item.id}>
+                  <div className="selected-project-content-section">
+                    <h2>{item.title}</h2>
+                    <p>{item.subTitle}</p>
+                    <button onClick={() => showSelectedItem(item.id)}>
+                      View Project
+                      <FiArrowUpRight />
+                    </button>
+                  </div>
+                  <div className="selected-project-image-section">
+                    <img
+                      src={item.image}
+                      alt="project"
+                      className="experiences-img"
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

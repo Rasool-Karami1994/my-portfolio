@@ -1,16 +1,16 @@
 import React from "react";
-import comment from "../../assets/img/comments-app2.png";
+import shop from "../../assets/img/shop.PNG";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 
-const CommentsDemoExperience = () => {
+const ShoeShopExperience = () => {
   const item = [
     {
-      image1: "/images/comments.png",
-      Title: "Persian Comments App",
-      subTitle: "Built with React & Css",
-      live: "https://rasool-http-app-demo.netlify.app/",
-      gitHub: "https://github.com/Rasool-Karami1994/Comments-demo",
+      image1: "/images/mobile-shop.PNG",
+      Title: "Online shoe store website",
+      subTitle: "An online shoe store with real back-end",
+      live: "https://rasool-shop.netlify.app/",
+      gitHub: "https://github.com/Rasool-Karami1994/shoe-shop",
     },
   ];
 
@@ -18,7 +18,6 @@ const CommentsDemoExperience = () => {
   const redirector = () => {
     navigate("/experiences");
   };
-
   return (
     <>
       <button onClick={redirector} className="back-button">
@@ -51,24 +50,30 @@ const CommentsDemoExperience = () => {
           </div>
         ))}
 
-        <div className="second-section-container">
-          <img src={comment} className="first-img" alt="this is an img"></img>
-          <div className="right-side-container">
-            <h3>DESCRIPTION</h3>
-            <p>
-              In this program, I used React Router Dom to simulate a part of a
-              page that was selected to add comments and display comments. My
-              main goal was to work with React Router Dom and custom parameters.
-            </p>
-            <p>
-              And the main feature of this program is having Persian language
-              which is implemented with one of the Google fonts.
-            </p>
-          </div>
+        <div className="description-container">
+          <h3>DESCRIPTION</h3>
+          <p>
+            An online shoe store that is connected to a real backend and uses
+            Mongodb as a database.
+          </p>
+          <p>
+            In this web application, all the steps of buying a product online
+            are included.
+          </p>
+          <p>
+            I used React and CSS to develop this project and practiced and
+            implemented various concepts such as Axios, working with APIs and
+            basic JavaScript concepts.{" "}
+          </p>
         </div>
+        <img
+          alt="desktop-size"
+          src={shop}
+          className="description-container-img"
+        ></img>
       </div>
     </>
   );
 };
 
-export default CommentsDemoExperience;
+export default ShoeShopExperience;
