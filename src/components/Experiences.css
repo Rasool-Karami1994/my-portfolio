@@ -65,8 +65,62 @@
 
 .experiences-img {
   position: relative;
-  height: 500px;
+  height: 350px;
   width: 70%;
   border-radius: 20px;
   border: 2px solid #212121;
+}
+@media screen and (max-width: 1000px) {
+  .selected-projects-container {
+    margin: 70px 0;
+  }
+  .selected-project-image-section {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .selected-project-image-section {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .selected-project-content-section {
+    width: 30%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .selected-project {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+  }
+  .selected-project-image-section {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selected-project-content-section {
+    width: 80%;
+    height: 500px;
+  }
+  .experiences-img {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #212121;
+    margin-bottom: -80px;
+  }
 }
