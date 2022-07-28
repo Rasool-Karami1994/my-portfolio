@@ -15,6 +15,8 @@ import finencial from "../assets/img/expense-tracker.PNG";
 const SliderComponent = () => {
   return (
     <div className="slider-container">
+      <h1 className="slider-title">MY Latest Works</h1>
+      <h4 className="slider-subtitle">Experiences Overview</h4>
       <Swiper
         freeMode={true}
         grabCursor={true}
@@ -27,16 +29,16 @@ const SliderComponent = () => {
           <img alt="shop" src={formik} className="slider-images"></img>
         </SwiperSlide>
         <SwiperSlide className="slides">
-          <img alt="shop" src={shop} className="slider-images"></img>
-        </SwiperSlide>
-        <SwiperSlide className="slides">
           <img alt="shop" src={weather} className="slider-images"></img>
         </SwiperSlide>
         <SwiperSlide className="slides">
-          <img alt="shop" src={realEstate} className="slider-images"></img>
+          <img alt="shop" src={farsiPortfolio} className="slider-images"></img>
         </SwiperSlide>
         <SwiperSlide className="slides">
-          <img alt="shop" src={farsiPortfolio} className="slider-images"></img>
+          <img alt="shop" src={shop} className="slider-images"></img>
+        </SwiperSlide>
+        <SwiperSlide className="slides">
+          <img alt="shop" src={realEstate} className="slider-images"></img>
         </SwiperSlide>
         <SwiperSlide className="slides">
           <img alt="shop" src={todoList} className="slider-images"></img>
