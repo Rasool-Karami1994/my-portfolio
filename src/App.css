@@ -412,6 +412,11 @@ footer {
   }
 }
 /* Experiences page styles*/
+.page-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
 
 .experinces-container {
   display: flex;
