@@ -12,7 +12,7 @@ const NotFound = () => {
       <h3>
         <Link to="/">Home</Link>
       </h3>
-      <img src={notFoundImg} alt="404-image"></img>
+      <img src={notFoundImg} alt="404"></img>
     </div>
   );
 };
