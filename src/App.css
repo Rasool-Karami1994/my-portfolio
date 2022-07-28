@@ -679,14 +679,14 @@ footer {
 }
 .first-section-left h3 {
   color: #212121;
-  font-size: 65px;
+  font-size: 57px;
   font-weight: bolder;
   opacity: 0.9;
 }
 .first-section-left p {
   color: #212121;
   opacity: 0.7;
-  font-size: 40px;
+  font-size: 35px;
   margin: 20px 0;
 }
 .button-container {
@@ -701,18 +701,17 @@ footer {
   display: inline-block;
   border-radius: 8px;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   font-size: 20px;
 }
 .button-container a {
   color: #fff;
   text-decoration: none;
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1480px) {
   .first-section-left h3 {
     color: #212121;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: bold;
     opacity: 0.9;
   }
@@ -720,6 +719,21 @@ footer {
     color: #212121;
     opacity: 0.7;
     font-size: 30px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section-left h3 {
+    color: #212121;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+  .first-section-left p {
+    color: #212121;
+    opacity: 0.7;
+    font-size: 22px;
     margin: 20px 0;
   }
 }
@@ -735,17 +749,25 @@ footer {
   }
 
   .first-img {
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 40%;
     margin: 50px 0;
+  }
+  .first-section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
   }
 }
 
 .description-container {
   width: 100%;
   height: 80%;
-  /* margin-left: 60px; */
-  margin: 250px 0 100px 0;
+  margin: 250px 0 50px 0;
 }
 
 .description-container h3 {
@@ -784,6 +806,9 @@ footer {
     padding: 10px;
     width: 100%;
   }
+  .description-container {
+    margin: 250px 0 0 0;
+  }
   .description-container p {
     font-size: 22px;
     opacity: 0.8;
@@ -797,9 +822,9 @@ footer {
     margin: 30px 0 30px 0;
   }
   .second-section-container img {
-    width: 80%;
-    height: 1000%;
+    width: 100%;
+    height: 100%;
     margin-right: 0;
-    margin: 30px 0;
+    margin: 0;
   }
 }
