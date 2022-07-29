@@ -13,7 +13,10 @@ const HomePage = () => {
           Here you can see all of my <br />
           web development skills & experiences
         </p>
-        <a href={require("../path/CV-Template.docx")} download="myFile">
+        <a
+          href={require("../path/Rasool-Karami-Resume.docx")}
+          download="myFile"
+        >
           DOWNLOAD CV{" "}
         </a>
       </div>
