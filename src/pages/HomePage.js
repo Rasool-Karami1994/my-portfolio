@@ -13,7 +13,9 @@ const HomePage = () => {
           Here you can see all of my <br />
           web development skills & experiences
         </p>
-        <a href="/">DOWNLOAD CV</a>
+        <a href={require("../path/CV-Template.docx")} download="myFile">
+          DOWNLOAD CV{" "}
+        </a>
       </div>
       <div className="images">
         <img src={blob} alt="blob" className="shape" />
