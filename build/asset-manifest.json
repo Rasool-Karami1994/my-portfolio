@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cd2ee2c4.css",
+    "main.js": "/static/js/main.3a31edc8.js",
+    "static/media/shop.PNG": "/static/media/shop.a7907d122340df669a1a.PNG",
+    "static/media/self-growth.jpg": "/static/media/self-growth.2efcb98aedcc44a068b4.jpg",
+    "static/media/404.jpg": "/static/media/404.44da10beb0b175d412e9.jpg",
+    "static/media/man .png": "/static/media/man .31323bd416605d4993c7.png",
+    "static/media/farsi-portfolio.PNG": "/static/media/farsi-portfolio.4f754a33f1d8552a3009.PNG",
+    "static/media/code.jpg": "/static/media/code.cf61d0fba7385ec554a1.jpg",
+    "static/media/formik.PNG": "/static/media/formik.c5e0dafb1cfe90962409.PNG",
+    "static/media/todolist.PNG": "/static/media/todolist.9f4e5855683d6b7dc829.PNG",
+    "static/media/weather.PNG": "/static/media/weather.9fa92ed71502a8eb48e9.PNG",
+    "static/media/real-estate.PNG": "/static/media/real-estate.825efc7006eeaa01f663.PNG",
+    "static/media/Rasool-Karami-Resume.docx": "/static/media/Rasool-Karami-Resume.c6ea46faacd925384df5.docx",
+    "static/media/expense-tracker.PNG": "/static/media/expense-tracker.86405df7b0c2abe76e83.PNG",
+    "static/media/logo.svg": "/static/media/logo.fbab13db14e590810c26cb9611c68593.svg",
+    "index.html": "/index.html",
+    "static/media/blob.svg": "/static/media/blob.614ea968984ff44944fafce5baa490f8.svg",
+    "main.cd2ee2c4.css.map": "/static/css/main.cd2ee2c4.css.map",
+    "main.3a31edc8.js.map": "/static/js/main.3a31edc8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd2ee2c4.css",
+    "static/js/main.3a31edc8.js"
+  ]
+}

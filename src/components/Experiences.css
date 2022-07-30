@@ -1,6 +1,6 @@
 .selected-projects-container {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: auto;
   flex-direction: column;
   justify-content: space-between;
@@ -11,7 +11,6 @@
   width: 100%;
   display: flex;
   height: auto;
-  /* border: 2px solid #000; */
   justify-content: space-between;
   align-items: center;
   margin: 150px 0;
@@ -57,16 +56,17 @@
 
 .selected-project-image-section {
   width: 60%;
-  height: 500px;
+  max-height: 800px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .experiences-img {
-  position: relative;
-  height: 350px;
-  width: 70%;
+  height: 100%;
+  min-height: 480px;
+  width: 100%;
+  max-width: 800px;
   border-radius: 20px;
   border: 2px solid #212121;
 }
@@ -76,23 +76,36 @@
   }
   .selected-project-image-section {
     width: 60%;
-    height: 500px;
+    max-height: 500px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 }
 @media screen and (max-width: 800px) {
   .selected-project-image-section {
     width: 70%;
-    height: 500px;
+    max-height: 500px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   .selected-project-content-section {
     width: 30%;
     height: 500px;
+  }
+  .experiences-img {
+    height: 100%;
+    min-height: 300px;
+    width: auto;
+    max-width: 350px;
+    border-radius: 20px;
+    border: 2px solid #212121;
+  }
+  .selected-project-content-section {
+    width: 30%;
+    height: 500px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -103,22 +116,29 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
+    margin: 150px 0;
   }
   .selected-project-image-section {
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
   .selected-project-content-section {
     width: 80%;
     height: 500px;
+    margin-bottom: 70px;
   }
   .experiences-img {
-    height: 350px;
-    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    min-height: 280px;
+    width: auto;
+    min-width: 380px;
     border-radius: 20px;
     border: 2px solid #212121;
     margin-bottom: -80px;
