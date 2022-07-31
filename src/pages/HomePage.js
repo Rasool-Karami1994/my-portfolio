@@ -14,7 +14,7 @@ const HomePage = () => {
           web development skills & experiences
         </p>
         <a
-          href={require("../path/Rasool-Karami-Resume.docx")}
+          href={require("../path/RasoolKarami-Resume.pdf")}
           download="myFile"
         >
           DOWNLOAD CV{" "}
